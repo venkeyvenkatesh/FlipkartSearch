@@ -1,0 +1,55 @@
+﻿<process name="Flipkart process" version="1.0" bpversion="6.9.0.26970" narrative="Retrieving data from flipkart webpage&#xD;&#xA;" byrefcollection="true" preferredid="88349885-a8f4-482c-a6d2-521fcafd5e85" published="true">
+  <view>
+    <camerax>0</camerax>
+    <cameray>84</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="76fec3c5-1e8a-4f48-9f7a-ad7d6f192fd1" name="Start" type="Start">
+    <display x="0" y="-120" />
+    <onsuccess>e25b5b82-b9f5-4a06-8e55-fe6f6c1f5a9c</onsuccess>
+  </stage>
+  <stage stageid="6a696946-0ce7-44db-92aa-673d671c524f" name="End" type="End">
+    <display x="120" y="285" />
+  </stage>
+  <stage stageid="94e12e6d-19de-41f7-ab8c-a4a7fb8dcea3" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="e25b5b82-b9f5-4a06-8e55-fe6f6c1f5a9c" name="Flipkart search::Launch Application" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="-60" />
+    <onsuccess>27d3a557-5015-4255-8262-2f701fdaec31</onsuccess>
+    <resource object="Flipkart search" action="Launch Application" />
+  </stage>
+  <stage stageid="27d3a557-5015-4255-8262-2f701fdaec31" name="Flipkart search::click on search bar" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="0" />
+    <onsuccess>51846ee4-0106-4ad2-8172-a4fd18176e53</onsuccess>
+    <resource object="Flipkart search" action="click on search bar" />
+  </stage>
+  <stage stageid="51846ee4-0106-4ad2-8172-a4fd18176e53" name="Flipkart search::Adding data to excel sheet" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="60" />
+    <onsuccess>cef973d6-772b-4ec5-8b96-44f3c8015a0a</onsuccess>
+    <resource object="Flipkart search" action="Adding data to excel sheet" />
+  </stage>
+  <stage stageid="cef973d6-772b-4ec5-8b96-44f3c8015a0a" name="Flipkart search::Data verfication" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="0" y="120" />
+    <onsuccess>8f9c2bc3-8f2b-4fab-b1f5-5fd1cabfebcd</onsuccess>
+    <resource object="Flipkart search" action="Data verfication" />
+  </stage>
+  <stage stageid="8f9c2bc3-8f2b-4fab-b1f5-5fd1cabfebcd" name="Flipkart search::Insert data to db" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="120" />
+    <onsuccess>982011ba-101f-43b0-8bf6-eda96d336d10</onsuccess>
+    <resource object="Flipkart search" action="Insert data to db" />
+  </stage>
+  <stage stageid="982011ba-101f-43b0-8bf6-eda96d336d10" name="Flipkart search::Getting color using Queue" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="210" />
+    <onsuccess>6a696946-0ce7-44db-92aa-673d671c524f</onsuccess>
+    <resource object="Flipkart search" action="Getting color using Queue" />
+  </stage>
+</process>
